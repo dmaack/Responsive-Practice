@@ -1,0 +1,129 @@
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    max-width:100%;
+    border:1px solid grey;
+}
+
+/********** GENERAL STYLES HERE **********/
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2;
+}
+
+h1, h2, h3{
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+    padding: 2% 0;
+}
+
+section{
+    padding:4% 0;
+}
+/************ HEADER STYLES HERE *********/
+header{
+    height:70vh;
+    background-image:url('../images/header.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    color:dodgerblue;
+
+}
+/****** another way to write the .titles *********/
+header h1, header h2, header h3,{
+    text-align:left;
+}
+nav{
+    display:flex;
+    justify-content:space-between;
+
+}
+ nav a{
+     color:dodgerblue;
+ }
+.logoContainer{
+    width:10%;
+}
+
+.links{
+    width:40%;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.titles{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+.titles div{
+    width:40%;
+}
+/************* ABOUT SECTION STYLES HERE ********/
+#about{
+    background-color: rgb(226, 68, 68);
+    display:flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+#about div{
+    background-color:#f8dc76; 
+    width:60%;
+}
+
+/************* SKILL SECTION STYLES HERE ***********/
+#skills{
+    text-align: center;
+}
+.skillsContainer{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.skillsContainer div{
+    width:20%;
+}
+
+#skills p{
+    text-align:justify;
+}
+/************** VIDEO SECTION STYLES HERE *************/
+#video{
+    height:40vh;
+    padding:0;
+}
+
+iframe{
+    width:100%;
+    height:100%;
+}
+/************ MEDIA QUERIES ***************/
+@media screen and (max-width:800px){
+    /***** HEADER SCETION STYLES *********/
+    .titles{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .titles div{
+        width:50%;
+    }
+    /***** ABOUT SCETION STYLES *********/
+#about div{
+    width:80%;
+}
+    /***** SKILLS SCETION STYLES *********/
+    .skillsContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .skillsContainer div{
+        width:80%;
+    }
+}
